@@ -1,0 +1,26 @@
+.header{
+
+    &__list{
+        background-color: #01384D;
+        width: 1200px;
+        margin-top: 15px;
+        margin-left: 25px;
+    }
+
+    &__item{
+        display: flex;
+        width: 800px;
+        justify-content: space-between;
+    }
+
+    &__name{
+        color: #fff;
+        margin: 13px;
+        padding-left: 15px;
+        font-family: 'Montserrat';
+        text-transform: capitalize;
+        font-weight: 600;
+        font-size: 15px;
+        line-height: 18px;
+    }
+}
