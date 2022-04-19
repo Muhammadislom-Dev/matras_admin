@@ -1,5 +1,7 @@
 import { useState, useEffect } from 'react'
 import './Header.scss'
+import Toggle from '../Toggle/Toggle';
+import constants from '../../configs/constants';
 
 const Header = ({items}) =>{
     const [data, setData] = useState([]);
