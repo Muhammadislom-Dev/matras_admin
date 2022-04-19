@@ -1,4 +1,43 @@
 .sidebar{
+    background-color: #01384D;
+    padding: 15px 0px;
+    width: 220px;
 
-    background-color: red;
+    &__link{
+        display: flex;
+        align-items: center;
+        margin-left: 25px;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 25px;
+        color: #fff;
+        text-decoration: none;
+        font-family: 'Sail';
+    }
+
+    &__links{
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        padding-left: 25px;
+        transition: 0.8s;
+            &:hover {
+                background-color: rgba(202, 195, 195, 0.2);
+            }
+    }
+    &__name{
+        font-family: 'Montserrat', sans-serif;
+        color: #fff;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 20px;
+        margin-left: 8px;
+    }
+
+    &__link-active{
+        background-color: #EABF9F;
+    }
+    &__list{
+        margin-top: 25px;
+    }
 }

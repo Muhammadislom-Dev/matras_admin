@@ -1,4 +1,6 @@
 import './App.scss';
+import React from 'react';
+import { Switch, Route } from 'react-router';
 import Sidebar from './components/Sidebar/Sidebar';
 
 function App() {
