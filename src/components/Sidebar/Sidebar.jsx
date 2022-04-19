@@ -20,38 +20,36 @@ evt.currentTarget.classList.add('sidebar__link-active')
 
 return(
 <div className="sidebar">
-    <div className="container">
-        <div className="sidebar__left">
-            <Link className="sidebar__link" to="/">
-            <img src={bed} alt="" className="sidebar__img" />
-            <h2 className='sidebar__home'>Matrassue</h2>
+    <div className="sidebar__left">
+        <Link className="sidebar__link" to="/">
+        <img src={bed} alt="" className="sidebar__img" />
+        <h2 className='sidebar__home'>Matrassue</h2>
+        </Link>
+        <div className="sidebar__list">
+            <Link onClick={handleAddClass} className='sidebar__links' to="/">
+            <Home />
+            <h3 className="sidebar__name">Buyurtmalar</h3>
             </Link>
-            <div className="sidebar__list">
-                <Link onClick={handleAddClass} className='sidebar__links' to="/">
-                <Home />
-                <h3 className="sidebar__name">Buyurtmalar</h3>
-                </Link>
-                <Link onClick={handleAddClass} className='sidebar__links' to="/customer">
-                <img src={Customer} alt="" />
-                <h3 className="sidebar__name">Customers</h3>
-                </Link>
-                <Link onClick={handleAddClass} className='sidebar__links' to="/message">
-                <Message />
-                <h3 className="sidebar__name">Toifalar</h3>
-                </Link>
-                <Link onClick={handleAddClass} className='sidebar__links' to="/product">
-                <Product />
-                <h3 className="sidebar__name">Mahsulotlar</h3>
-                </Link>
-                <Link onClick={handleAddClass} className='sidebar__links' to="/technology">
-                <Technology />
-                <h3 className="sidebar__name">Tehnologiyalar</h3>
-                </Link>
-                <Link onClick={handleAddClass} className='sidebar__links' to="/addres">
-                <Address />
-                <h3 className="sidebar__name">Manzil</h3>
-                </Link>
-            </div>
+            <Link onClick={handleAddClass} className='sidebar__links' to="/customer">
+            <img src={Customer} alt="" />
+            <h3 className="sidebar__name">Customers</h3>
+            </Link>
+            <Link onClick={handleAddClass} className='sidebar__links' to="/message">
+            <Message />
+            <h3 className="sidebar__name">Toifalar</h3>
+            </Link>
+            <Link onClick={handleAddClass} className='sidebar__links' to="/product">
+            <Product />
+            <h3 className="sidebar__name">Mahsulotlar</h3>
+            </Link>
+            <Link onClick={handleAddClass} className='sidebar__links' to="/technology">
+            <Technology />
+            <h3 className="sidebar__name">Tehnologiyalar</h3>
+            </Link>
+            <Link onClick={handleAddClass} className='sidebar__links' to="/addres">
+            <Address />
+            <h3 className="sidebar__name">Manzil</h3>
+            </Link>
         </div>
     </div>
 </div>
