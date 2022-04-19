@@ -7,7 +7,7 @@ import Sidebarpage from './components/Sidebarpage/Sidebarpage';
 function App() {
   return (
     <div className="App">
-       <Sidebar />
+        <Sidebar />
        <div className="App_content">
           <Sidebarpage />
        </div>
