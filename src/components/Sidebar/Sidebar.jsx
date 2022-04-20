@@ -10,6 +10,7 @@ import Product from '../Svgs/Product'
 import Customer from '../../assets/img/Customer.svg'
 
 const Sidebar = ()=>{
+    
 const handleAddClass = (evt) =>{
 const links = document.querySelectorAll('.sidebar__link-active');
 links.forEach(link =>{
@@ -26,11 +27,11 @@ return(
         <h2 className='sidebar__home'>Matrassue</h2>
         </Link>
         <div className="sidebar__list">
-            <Link onClick={handleAddClass} className='sidebar__links' to="/">
+            <Link onClick={handleAddClass} className='sidebar__links'  to="/">
             <Home />
             <h3 className="sidebar__name">Buyurtmalar</h3>
             </Link>
-            <Link onClick={handleAddClass} className='sidebar__links' to="/customer">
+            <Link onClick={handleAddClass} className='sidebar__links'  to="/customer">
             <img src={Customer} alt="" />
             <h3 className="sidebar__name">Customers</h3>
             </Link>
