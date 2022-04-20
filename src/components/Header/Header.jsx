@@ -1,7 +1,14 @@
+import { useEffect, useState } from 'react'
 import './Header.scss'
 
 
 const Header = () =>{
+    // const [data, setData] = useState([]);
+    // useEffect (async () =>{
+    //     fetch(`https://jsonplaceholder.typicode.com/users`)
+    //     .then(res => res.json())
+    //     .then(data => console.log(data))
+    // }, [])
 
 
 return(
@@ -19,6 +26,8 @@ return(
                 </tr>
             </thead>
             <tbody className='header__title'>
+                {
+                    Array.from(new Array(10)).map(e =>(
                 <tr>
                     <td className='header__names'>6</td>
                     <td className='header__names'>Jenny Wilson</td>
@@ -32,45 +41,8 @@ return(
                         </label>
                     </td>
                 </tr>
-                <tr>
-                    <td className='header__names'>6</td>
-                    <td className='header__names'>Jenny Wilson</td>
-                    <td className='header__names'>+998 90 123 45 67</td>
-                    <td className='header__names'>Ortopedik Eko matras</td>
-                    <td className='header__names'>4</td>
-                    <td className='header__names'>
-                        <label class="switch">
-                            <input type="checkbox" />
-                            <span class="slider round"></span>
-                        </label>
-                    </td>
-                </tr>
-                <tr>
-                    <td className='header__names'>6</td>
-                    <td className='header__names'>Jenny Wilson</td>
-                    <td className='header__names'>+998 90 123 45 67</td>
-                    <td className='header__names'>Ortopedik Eko matras</td>
-                    <td className='header__names'>4</td>
-                    <td className='header__names'>
-                        <label class="switch">
-                            <input type="checkbox" />
-                            <span class="slider round"></span>
-                        </label>
-                    </td>
-                </tr>
-                <tr>
-                    <td className='header__names'>6</td>
-                    <td className='header__names'>Jenny Wilson</td>
-                    <td className='header__names'>+998 90 123 45 67</td>
-                    <td className='header__names'>Ortopedik Eko matras</td>
-                    <td className='header__names'>4</td>
-                    <td className='header__names'>
-                        <label class="switch">
-                            <input type="checkbox" />
-                            <span class="slider round"></span>
-                        </label>
-                    </td>
-                </tr>
+                    ))
+                }
             </tbody>
         </table>
     </div>
