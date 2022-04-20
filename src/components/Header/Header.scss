@@ -1,17 +1,38 @@
 .header{
 
+  &__page{
+    background-color: #01384D;
+    margin: 35px;
+    width: 1200px;
+    justify-content: space-between;
+  }
+  &__title{
+    background-color: #fff;
+  }
 
-    &__page{
-      background-color: #01384D;
-      margin: 25px;
-      width: 1250px;
-    }
-    &__table{
-      width: 1250px;
-      padding: 12px;
-    }
+  
+  &__name{
+    color: #fff;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 18px;
+    font-family: 'Montserrat';
+    padding: 15px;
+  }
+
+  &__list{
+    width: 1200px;
+  }
+
+  &__names{
+    text-align: center;
+    padding: 8px;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 18px;
+    color: #000;
+  }
 }
-
 
 .switch {
   position: relative;
