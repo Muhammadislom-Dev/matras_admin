@@ -4,7 +4,7 @@ import { Switch, Route } from 'react-router';
 import Sidebar from './components/Sidebar/Sidebar';
 import Sidebarpage from './components/Sidebarpage/Sidebarpage';
 import Header from './components/Header/Header';
-// import Customer from './components/Customer/Customer';
+import Customer from './components/Customer/Customer';
 
 function App() {
   return (
@@ -14,7 +14,7 @@ function App() {
           <Switch>
             <Route path="/customer" exact>
               <Sidebarpage />
-               /nsndodsofnsdi
+               <Customer />
             </Route>
             <Route path="/message" exact>
               <Sidebarpage />

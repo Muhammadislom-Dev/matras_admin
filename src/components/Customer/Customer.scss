@@ -1,0 +1,40 @@
+.customer{
+
+    &__list{
+        background-color: #01384D;
+        margin: 35px;
+        width: 1200px;
+        justify-content: space-between;
+    }
+
+    &__page{
+        background-color: #fff;
+    }
+
+    &__text{
+        text-align: center;
+        padding: 12px;
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 18px;
+    }
+    &__name{
+        padding: 15px;
+        color: #fff;
+        font-weight: 600;
+        font-size: 15px;
+        line-height: 18px;
+    }
+    &__texts{
+        text-align: center;
+    }
+    &__img{
+        width: 25px;
+        height: 25px;
+    }
+
+}
+
+span{
+    color: gray;
+}
