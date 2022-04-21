@@ -29,7 +29,9 @@ const Customer = () =>{
                                 </label>
                             </td>
                             <td className='customer__texts'>
-                                <img className='customer__img' src={deletes} alt="" />
+                                <button className="customer__btn">
+                                    <img className='customer__img' src={deletes} alt="" />
+                                </button>
                             </td>
                         </tr>
                             ))

@@ -29,8 +29,17 @@
         text-align: center;
     }
     &__img{
-        width: 25px;
-        height: 25px;
+        margin-left: -1px;
+        margin-top: 5px;
+    }
+
+    &__btn{
+        width: 34px;
+        height: 34px;
+        border: none;
+        background-color: #fbe9e9;
+        border-radius: 5px;
+        cursor: pointer;
     }
 
 }
