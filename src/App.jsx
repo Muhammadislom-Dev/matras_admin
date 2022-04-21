@@ -5,6 +5,7 @@ import Sidebar from './components/Sidebar/Sidebar';
 import Sidebarpage from './components/Sidebarpage/Sidebarpage';
 import Header from './components/Header/Header';
 import Customer from './components/Customer/Customer';
+import Section from './components/Section/Section';
 
 function App() {
   return (
@@ -18,7 +19,7 @@ function App() {
             </Route>
             <Route path="/message" exact>
               <Sidebarpage />
-               /message
+               <Section />
             </Route>
             <Route path="/product" exact>
               <Sidebarpage />
