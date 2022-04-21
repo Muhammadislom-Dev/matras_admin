@@ -5,7 +5,8 @@ import Sidebar from './components/Sidebar/Sidebar';
 import Sidebarpage from './components/Sidebarpage/Sidebarpage';
 import Header from './components/Header/Header';
 import Customer from './components/Customer/Customer';
-import Section from './components/Section/Section';
+// import Section from './components/Section/Section';
+import Todo from './components/todo';
 
 function App() {
   return (
@@ -19,7 +20,7 @@ function App() {
             </Route>
             <Route path="/message" exact>
               <Sidebarpage />
-               <Section />
+               <Todo />
             </Route>
             <Route path="/product" exact>
               <Sidebarpage />
