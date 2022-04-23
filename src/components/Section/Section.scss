@@ -1,44 +1,72 @@
 .section{
 
-    &__table{
-        background-color: #fff;
+    &__page{
+        background-color: #01384D;
         margin: 35px;
         width: 1200px;
         justify-content: space-between;
-    }
-    &__list{
-        background-color: #01384D;
-        display: flex;
-        justify-content: flex-start;
-        width: 1200px;
-    }
-    &__name{
-        padding: 18px;
+      }
+      &__title{
+        background-color: #fff;
+      }
+
+      &__name{
+        color: #fff;
         font-weight: 600;
         font-size: 15px;
         line-height: 18px;
-        color: #fff;
-    }
-    &__text{
-        padding: 8px;
-        font-weight: 500;
-        font-size: 15px;
-        line-height: 18px;
-        color: #000;
-    }
-    &__btn{
-        border: none;
-        width: 34px;
-        height: 34px;
+        font-family: 'Montserrat';
+        padding: 15px;
+        display: flex;
+        justify-content: flex-start;
+      }
+    
+      &__list{
+        width: 1200px;
+      }
+      &__names{
+          color: #000;
+          font-weight: 500;
+          font-size: 15px;
+          line-height: 18px;
+          padding: 12px;
+      }
+
+      &__btns{
+          display: flex;
+          justify-content: flex-end;
+      }
+      &__btn{
+        width: 38px;
+        height: 38px;
         border: none;
         background-color: #fbe9e9;
         border-radius: 5px;
         cursor: pointer;
+        margin: 10px;
+      }
+      &__img{
+        margin-left: -1px;
+        margin-top: 7px;
     }
-    &__title{
-        display: flex;
-        justify-content: space-between;
-        padding: 10px;
+      
+    &__buttons{
+        background: #01384D;
+        border-radius: 8px;
+        width: 135px;
+        height: 40px;
+        border: 2px solid #01384D;
+        font-weight: 600;
+        font-size: 15px;
+        line-height: 18px;
+        text-align: center;
+        color: #fff;
+    }
+
+    &__button{
+        position: absolute;
+        top: 90%;
+        left: 85%;
     }
 
 }
