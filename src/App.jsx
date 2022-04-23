@@ -20,7 +20,7 @@ function App() {
             </Route>
             <Route path="/message" exact>
               <Sidebarpage />
-               <Todo />
+               {/* <Todo /> */}
             </Route>
             <Route path="/product" exact>
               <Sidebarpage />
