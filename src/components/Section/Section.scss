@@ -61,12 +61,81 @@
         line-height: 18px;
         text-align: center;
         color: #fff;
+        cursor: pointer;
     }
 
     &__button{
         position: absolute;
         top: 90%;
         left: 85%;
+    }
+
+    &__dialog{
+        width: 280px;
+        height: 300px;
+        border: 2px solid rgb(93, 88, 88);
+        position: absolute;
+        top: 25%;
+    }
+
+    &__close{
+        width: 30px;
+        height: 30px;
+        background-color: #01384D;
+        border: none;
+        cursor: pointer;
+    }
+
+    &__closes{
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    &__full{
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 22px;
+        color: #000;
+    }
+
+    &__input{
+        width: 260px;
+        height: 40px;
+        background: #FFFFFF;
+        border: 1px solid rgba(0, 0, 0, 0.2);
+        box-sizing: border-box;
+        border-radius: 5px;
+        outline: none;
+        padding: 8px;
+    }
+
+    &__left{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 5px;
+    }
+
+    &__surname{
+        font-weight: 400;
+        font-size: 17px;
+        line-height: 17px;
+        color: #000;
+    }
+
+    &__right{
+        width: 280px;
+        height: 45px;
+        border-radius: 7px;
+        background-color: #01384D;
+        border: none;
+        color: #fff;
+        font-weight: 600;
+        line-height: 18px;
+        font-size: 16px;
+        text-align: center;
+        margin-top: 20px;
+        cursor: pointer;
     }
 
 }
