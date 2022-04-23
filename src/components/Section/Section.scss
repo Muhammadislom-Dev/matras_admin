@@ -1,0 +1,44 @@
+.section{
+
+    &__table{
+        background-color: #fff;
+        margin: 35px;
+        width: 1200px;
+        justify-content: space-between;
+    }
+    &__list{
+        background-color: #01384D;
+        display: flex;
+        justify-content: flex-start;
+        width: 1200px;
+    }
+    &__name{
+        padding: 18px;
+        font-weight: 600;
+        font-size: 15px;
+        line-height: 18px;
+        color: #fff;
+    }
+    &__text{
+        padding: 8px;
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 18px;
+        color: #000;
+    }
+    &__btn{
+        border: none;
+        width: 34px;
+        height: 34px;
+        border: none;
+        background-color: #fbe9e9;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    &__title{
+        display: flex;
+        justify-content: space-between;
+        padding: 10px;
+    }
+
+}

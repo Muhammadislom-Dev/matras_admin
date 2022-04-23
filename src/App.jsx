@@ -7,6 +7,7 @@ import Header from './components/Header/Header';
 import Customer from './components/Customer/Customer';
 // import Section from './components/Section/Section';
 import Todo from './components/todo';
+import Section from './components/Section/Section';
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
             <Route path="/message" exact>
               <Sidebarpage />
                {/* <Todo /> */}
+               <Section />
             </Route>
             <Route path="/product" exact>
               <Sidebarpage />
