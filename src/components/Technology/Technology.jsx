@@ -20,25 +20,22 @@ return [];
 
 const Technology=() =>{
 
-const [inputData, setInputData] = useState('');
+const [inputData, setInputData] = useState("");
 const [items, setItems] = useState(getLocalItmes());
 
 const addItem = () =>{
 if(!inputData){
 
 }
-
 else{
 setItems([...items, inputData]);
 setInputData('')
 }
-
-
 }
 
-const deleteItem = (id) =>{
+const deleteItem = (id) => {
 console.log(id);
-const updatedItems = items.filter((elem, ind) => {
+const updatedItems = items.filter((elem, ind,elems) => {
 return ind != id;
 });
 
@@ -101,14 +98,14 @@ return(
                 </tr>
 
                 {
-                items.map((elem, ind) =>{
+                items.map((elem, ind, elems) =>{
                 return(
                 <tr key={ind} className="technology__box">
                     <td className='technology__names'>{elem}</td>
                     <td className='technology__names'>{elem}</td>
-                    <td className='technology__names'>{elem}</td>
+                    <td className='technology__names'>{elems}</td>
                     <td className='technology__item'>
-                        <button onClick={openModal} className="technology__left">
+                        <button  className="technology__left">
                             <img src={edit} alt="" className="technology__img" />
                         </button>
                         <button className="technology__right" onClick={() => deleteItem(ind)}>

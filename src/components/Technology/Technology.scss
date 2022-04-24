@@ -62,7 +62,7 @@
       &__buttons{
         background: #01384D;
         border-radius: 8px;
-        width: 135px;
+        width: 155px;
         height: 40px;
         border: 2px solid #01384D;
         font-weight: 600;
@@ -142,6 +142,7 @@
         line-height: 18px;
         font-weight: 600;
         border-radius: 7px;
+        cursor: pointer;
     }
     &__titles{
         display: flex;
