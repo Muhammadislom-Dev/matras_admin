@@ -1,0 +1,83 @@
+.home{
+
+    &__pages{
+        background-color: #01384D;
+        margin: 35px;
+        width: 1200px;
+        justify-content: space-between;
+      }
+      &__title{
+        background-color: #fff;
+      }
+      &__list{
+          width: 1200px;
+      }
+      &__names{
+        color: #000;
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 18px;
+        padding:12px;
+        text-align: center;
+    }
+
+    &__name{
+        color: #fff;
+        padding: 12px;
+    }
+
+    &__dialog{
+        width: 815px;
+        height: 400px;
+        background-color: #fff;
+        border: 1px solid #01384D;
+    }
+
+    &__close{
+        width: 30px;
+        height: 30px;
+        background-color: #01384D;
+        border: none;
+        cursor: pointer;
+    }
+
+    &__closes{
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    &__file{
+        width: 250px;
+        height: 250px;
+        background-color: #E6EBED;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    &__left{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__input{
+        width: 240px;
+        height: 30px;
+        outline: none;
+        border: 1px solid #01384D;
+        padding: 5px;
+    }
+ 
+    &__items{
+        display: flex;
+        width: 250px;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__surname{
+        outline: none;
+        border: 1px solid #01384D;
+        width: 250px;
+    }
+}
