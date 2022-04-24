@@ -9,6 +9,7 @@ import Customer from './components/Customer/Customer';
 import Todo from './components/todo';
 import Section from './components/Section/Section';
 import Technology from './components/Technology/Technology';
+import Home from './components/Home/Home';
 
 function App() {
   return (
@@ -35,7 +36,7 @@ function App() {
             </Route>
             <Route path="/addres" exact >
               <Sidebarpage />
-                /addres
+                <Home />
             </Route>
             <Route path="/">
                 <Sidebarpage />
