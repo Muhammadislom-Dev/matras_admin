@@ -117,7 +117,14 @@ const Technology=() =>{
                 <div className="technology__list">
                     <div className="technology__items">
                         <p>Nomi</p>
-                        <input type="text" className="technology__input" placeholder='masalan:'
+                        <input type="name" className="technology__input" placeholder='masalan:'
+                         value={inputData}
+                         onChange={(e) => setInputData(e.target.value) }
+                         />
+                    </div>
+                    <div className="technology__items">
+                        <p>Rasm</p>
+                        <input type="password" className="technology__input"  
                          value={inputData}
                          onChange={(e) => setInputData(e.target.value) }
                          />
@@ -130,15 +137,8 @@ const Technology=() =>{
                          />
                     </div>
                     <div className="technology__items">
-                        <p>Rasm</p>
-                        <input type="text" className="technology__input" placeholder='masalan:'
-                         value={inputData}
-                         onChange={(e) => setInputData(e.target.value) }
-                         />
-                    </div>
-                    <div className="technology__items">
                         <p>Video</p>
-                        <input type="text" className="technology__input" placeholder='masalan:'
+                        <input type="text" className="technology__input" 
                          value={inputData}
                          onChange={(e) => setInputData(e.target.value) }
                          />

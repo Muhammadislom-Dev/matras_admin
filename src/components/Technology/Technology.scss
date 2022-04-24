@@ -77,7 +77,43 @@
     &__dialog{
         border: 2px solid rgb(93, 88, 88);
         background-color: #f5f5f5;
-        width: 515px;
-        height: 314px;
+        width: 545px;
+        height: 384px;
+    }
+
+    &__list{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        width: 545px;
+    }
+
+    &__input{
+        width: 250px;
+        height: 40px;
+        outline: none;
+        padding: 7px;
+        border: 1px solid rgba(0, 0, 0, 0.2);
+        box-sizing: border-box;
+        border-radius: 5px;
+        background-color: #fff;
+    }
+    &__close{
+        width: 30px;
+        height: 30px;
+        background-color: #01384D;
+        border: none;
+        cursor: pointer;
+    }
+
+    &__closes{
+        display: flex;
+        justify-content: flex-end;
+    }
+    &__full{
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 22px;
+        color: #000;
     }
 }
