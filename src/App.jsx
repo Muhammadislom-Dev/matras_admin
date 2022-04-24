@@ -8,6 +8,7 @@ import Customer from './components/Customer/Customer';
 // import Section from './components/Section/Section';
 import Todo from './components/todo';
 import Section from './components/Section/Section';
+import Technology from './components/Technology/Technology';
 
 function App() {
   return (
@@ -30,7 +31,7 @@ function App() {
             </Route>
             <Route path="/technology" exact>
               <Sidebarpage />
-                /technology
+              <Technology />
             </Route>
             <Route path="/addres" exact >
               <Sidebarpage />

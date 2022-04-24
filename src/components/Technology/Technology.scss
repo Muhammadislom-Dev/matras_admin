@@ -1,0 +1,83 @@
+.technology{
+
+    &__page{
+        background-color: #01384D;
+        margin: 35px;
+        width: 1200px;
+        justify-content: space-between;
+      }
+      &__title{
+        background-color: #fff;
+      }
+      &__list{
+        width: 1200px;
+      }
+      &__names{
+          text-align: center;
+          color: #000;
+          font-weight: 500;
+          font-size: 15px;
+          line-height: 18px;
+          padding: 12px;
+      }
+
+      &__name{
+          color: #fff;
+          font-weight: 600;
+          font-size: 15px;
+          line-height: 18px;
+          padding: 15px;
+          font-family: 'Montserrat';
+      }
+
+      &__item{
+          display: flex;
+          justify-content: flex-end;
+          padding: 8px;
+      }
+      &__left{
+          border: none;
+          background:#E6EBED;
+          border-radius: 5px;
+          width: 34px;
+          height: 34px;
+          margin: 5px;
+          cursor: pointer;
+      }
+
+      &__right{
+          width: 34px;
+          height: 34px;
+          border: none;
+          background-color: #fbe9e9;
+          cursor: pointer;
+          margin: 5px;
+      }
+
+      &__buttons{
+        background: #01384D;
+        border-radius: 8px;
+        width: 135px;
+        height: 40px;
+        border: 2px solid #01384D;
+        font-weight: 600;
+        font-size: 15px;
+        line-height: 18px;
+        text-align: center;
+        color: #fff;
+        cursor: pointer;
+    }
+
+    &__button{
+        position: absolute;
+        top: 90%;
+        left: 85%;
+    }
+
+    &__dialog{
+        border: 2px solid rgb(93, 88, 88);
+        background-color: #f5f5f5;
+        width: 515px;
+        height: 314px;
+    }
+}

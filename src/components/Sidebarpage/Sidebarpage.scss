@@ -25,9 +25,9 @@
         outline: none;
         border: none;
         width: 370px;
+        padding: 9px;
 
         &::placeholder{
-            padding-left: 5px;
             color: #000;
             opacity: 0.5;
         }
