@@ -101,6 +101,25 @@ return(
                         </button>
                     </td>
                 </tr>
+                {
+                items.map((elem, ind) => {
+                return(
+                <tr key={ind}>
+                    <td className='home__names'>{elem}</td>
+                    <td className='home__names'>{elem}</td>
+                    <td className='home__names'><img src={place} alt="" /></td>
+                    <td className='technology__item'>
+                        <button className="technology__left">
+                            <img src={edit} alt="" className="technology__img" />
+                        </button>
+                        <button className="technology__right" onClick={() => deleteItem(ind)}>
+                            <img src={deletes} alt="" className="technology__imgs" />
+                        </button>
+                    </td>
+                </tr>
+                )
+                })
+                }
             </tbody>
         </table>
     </div>
@@ -124,11 +143,13 @@ return(
             <div className="home__right">
                 <div className="home__item">
                     <p>Manzil</p>
-                    <input className='home__input' type="text" />
+                    <input value={inputData} onChange={(e)=> setInputData(e.target.value) } className='home__input'
+                    type="text" />
                 </div>
                 <div className="home__item">
                     <p>Location</p>
-                    <input className='home__input' type="text" />
+                    <input value={inputData} onChange={(e)=> setInputData(e.target.value) } className='home__input'
+                    type="text" />
                 </div>
                 <div className="home__items">
                     <p>Holat</p>
@@ -143,6 +164,7 @@ return(
                 <textarea className='home__surname' placeholder='Izoh' required></textarea>
             </div>
         </div>
+        <button className='home__btns' onClick={addItem}>Saqlash</button>
     </dialog>
 </div>
 )

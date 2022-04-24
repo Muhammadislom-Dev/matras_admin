@@ -31,6 +31,8 @@
         height: 400px;
         background-color: #fff;
         border: 1px solid #01384D;
+        position: absolute;
+        top: 30%;
     }
 
     &__close{
@@ -79,5 +81,21 @@
         outline: none;
         border: 1px solid #01384D;
         width: 250px;
+    }
+
+    &__btns{
+        position: absolute;
+        top: 85%;
+        left: 70%;
+        width: 240px;
+        height: 40px;
+        background-color: #01384D;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        font-size: 17px;
+        line-height: 18px;
+        font-weight: 600;
+        cursor: pointer;
     }
 }

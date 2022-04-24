@@ -35,7 +35,7 @@ setInputData('')
 
 const deleteItem = (id) => {
 console.log(id);
-const updatedItems = items.filter((elem, ind,elems) => {
+const updatedItems = items.filter((elem, ind) => {
 return ind != id;
 });
 
