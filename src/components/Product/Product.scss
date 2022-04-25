@@ -53,4 +53,63 @@
         padding: 6px;
         border-radius: 5px;
     }
+
+    &__dialog{
+        width: 1030px;
+        height: 450px;
+        background-color: #fff;
+        position: absolute;
+        border: 1px solid #01384D;
+        top: 22%;
+        left: 12%;
+    }
+
+    &__file{
+        width: 220px;
+        height: 220px;
+        background-color: #E6EBED;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    &__input{
+        width: 240px;
+        height: 30px;
+        outline: none;
+        border: 1px solid #01384D;
+        background-color: #fff;
+        padding: 5px;
+        border-radius: 5px;
+    }
+    &__box{
+        display: flex;
+        justify-content: space-between;
+        // align-items: center;
+    }
+    &__item{
+        display: flex;
+        justify-content: space-between;
+        width: 240px;
+        align-items: center;
+    }
+    &__select{
+        width: 240px;
+        height: 43px;
+        outline: none;
+        border: 1px solid #01384D;
+        border-radius: 5px;
+    }
+    &__aside, &__asides{
+        margin-top: -40px;
+    }
+    &__btn{
+        background-color: #01384D;
+        width: 230px;
+        height: 40px;
+        border: none;
+        color: #fff;
+        margin-top: 25px;
+        border-radius: 7px;
+    }
 }
