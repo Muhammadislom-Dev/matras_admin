@@ -6,72 +6,72 @@ import close from '../../assets/img/close.png'
 import vector from '../../assets/img/Vector.png'
 import { useState, useEffect } from 'react'
 
-    const getLocalItmes = () =>{
-    let list = localStorage.getItem('lists')
-    console.log(list);
+const getLocalItmes = () =>{
+let list = localStorage.getItem('lists')
+console.log(list);
 
-    if(list){
-    return JSON.parse(localStorage.getItem('lists'));
-    }
-    else{
-    return [];
-    }
-    }
+if(list){
+return JSON.parse(localStorage.getItem('lists'));
+}
+else{
+return [];
+}
+}
 
 const Product = () =>{
 
-    const [inputData, setInputData] = useState('');
-    const [items, setItems] = useState(getLocalItmes());
+const [inputData, setInputData] = useState('');
+const [items, setItems] = useState(getLocalItmes());
 
-    const addItem = () =>{
-    if(!inputData){
+const addItem = () =>{
+if(!inputData){
 
-    }
+}
 
-    else{
-    setItems([...items, inputData]);
-    setInputData('')
-    }
-
-
-    }
-
-    const deleteItem = (id) =>{
-    console.log(id);
-    const updatedItems = items.filter((elem, ind) => {
-    return ind != id;
-    });
-
-    setItems(updatedItems)
-    }
-
-    const removeAll = () =>{
-    setItems([]);
-    }
-
-    useEffect(() =>{
-    localStorage.setItem('lists', JSON.stringify(items))
-    }, [items])
+else{
+setItems([...items, inputData]);
+setInputData('')
+}
 
 
+}
 
-    const [modal, setModal] = useState(false);
+const deleteItem = (id) =>{
+console.log(id);
+const updatedItems = items.filter((elem, ind) => {
+return ind != id;
+});
 
-    const openModal = (e) =>{
-    e.preventDefault()
-    setModal(!modal)
-    }
+setItems(updatedItems)
+}
 
-    const todo = (event) =>{
-    event.preventDefault()
+const removeAll = () =>{
+setItems([]);
+}
 
-    setModal(!modal)
+useEffect(() =>{
+localStorage.setItem('lists', JSON.stringify(items))
+}, [items])
 
-    event.target[0].value = null;
-    event.target[1].value = null;
 
-    console.log(event.target[0].value);
-    }
+
+const [modal, setModal] = useState(false);
+
+const openModal = (e) =>{
+e.preventDefault()
+setModal(!modal)
+}
+
+const todo = (event) =>{
+event.preventDefault()
+
+setModal(!modal)
+
+event.target[0].value = null;
+event.target[1].value = null;
+
+console.log(event.target[0].value);
+}
 
 
 return(
@@ -126,11 +126,38 @@ return(
                         <button className="product__left">
                             <img src={edit} alt="" />
                         </button>
-                        <button className='product__right'>
+                        <button  className='product__right'>
                             <img src={deletes} alt="" />
                         </button>
                     </td>
                 </tr>
+                {
+                items.map((elem, ind) =>{
+                return(
+                <tr key={ind} className="product__title">
+                    <td className='product__names'>{elem}</td>
+                    <td className='product__names'>{elem}</td>
+                    <td className='product__names'>{elem}</td>
+                    <td className='product__names'>{elem}</td>
+                    <td className='product__names'>{elem}</td>
+                    <td className='product__names'>
+                        <label class="switch">
+                            <input type="checkbox" />
+                            <span class="slider round"></span>
+                        </label>
+                    </td>
+                    <td className='product__titles'>
+                        <button className="product__left">
+                            <img src={edit} alt="" />
+                        </button>
+                        <button onClick={() => deleteItem(ind)} className='product__right'>
+                            <img src={deletes} alt="" />
+                        </button>
+                    </td>
+                </tr>
+                )
+                })
+                }
             </tbody>
         </table>
     </div>
@@ -153,21 +180,26 @@ return(
             </button>
             <div className="product__aside">
                 <p>Toifalar</p>
-                <select className='product__select' name="" id="" placeholder='masalan:'>
+                <select onChange={(e)=> setInputData(e.target.value) } className='product__select' name="" id=""
+                    placeholder='masalan:'>
                     <option value="">Model C</option>
                     <option value="">Model A</option>
                     <option value="">Model B</option>
                 </select>
                 <p>Tovar nomi</p>
-                <input className='product__input' type="text" placeholder='masalan:' />
+                <input onChange={(e)=> setInputData(e.target.value) } className='product__input' type="text"
+                placeholder='masalan:' />
                 <p>Narxi</p>
-                <input className='product__input' type="number" placeholder='masalan:20000' />
+                <input onChange={(e)=> setInputData(e.target.value) } className='product__input' type="number"
+                placeholder='masalan:20000' />
                 <p>Yuklama</p>
-                <input type="number" className='product__input' placeholder='masalan:200kg' />
+                <input onChange={(e)=> setInputData(e.target.value) } type="number" className='product__input'
+                placeholder='masalan:200kg' />
             </div>
             <div className="product__aside">
                 <p>Razmeri</p>
-                <input className='product__input' type="text" placeholder='masalan:200x140x40' />
+                <input onChange={(e)=> setInputData(e.target.value) } className='product__input' type="text"
+                placeholder='masalan:200x140x40' />
                 <p>Kafolat</p>
                 <input className='product__input' type="number" placeholder='masalan:' />
                 <p>Sig'im</p>
@@ -194,7 +226,7 @@ return(
                         <span class="slider round"></span>
                     </label>
                 </div>
-                <button className='product__btn'>Qo'shish</button>
+                <button onClick={addItem} className='product__btn'>Qo'shish</button>
             </div>
         </div>
     </dialog>
