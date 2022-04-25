@@ -10,6 +10,7 @@ import Todo from './components/todo';
 import Section from './components/Section/Section';
 import Technology from './components/Technology/Technology';
 import Home from './components/Home/Home';
+import Product from './components/Product/Product';
 
 function App() {
   return (
@@ -28,7 +29,7 @@ function App() {
             </Route>
             <Route path="/product" exact>
               <Sidebarpage />
-               /product
+               <Product />
             </Route>
             <Route path="/technology" exact>
               <Sidebarpage />
